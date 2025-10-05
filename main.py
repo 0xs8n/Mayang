@@ -11,7 +11,7 @@ load_dotenv()
 
 # Configuration
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1003004470180")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 MONITORED_USERNAMES = os.getenv("MONITORED_USERNAMES", "").split(",")
 FOLLOWING_FILE = "following_lists.json"
 CHECK_INTERVAL = 60  # seconds
