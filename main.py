@@ -10,9 +10,9 @@ import base64
 load_dotenv()
 
 # Configuration
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8421161178:AAFEb5t_59I4MgtHZDNeJzA10fb-FhS_mfk")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1003004470180")
-MONITORED_USERNAMES = ["0xs8n"]
+MONITORED_USERNAMES = os.getenv("MONITORED_USERNAMES", "").split(",")
 FOLLOWING_FILE = "following_lists.json"
 CHECK_INTERVAL = 60  # seconds
 
